@@ -8,3 +8,24 @@
 @import 'shop-item';
 @import 'shop-btn';
 @import 'dropdown';
+
+.shop-item {
+  margin: 0.5em;
+  padding: $gutter;
+  border: 0.2rem solid $brand-primary;
+  }
+
+.shop-item__shirt {
+  width: 100%;
+
+}
+
+.shop-item__title {
+  display: flex;
+  justify-content: center;
+}
+
+.shop-item__desc {
+  display: flex;
+  justify-content: center;
+}

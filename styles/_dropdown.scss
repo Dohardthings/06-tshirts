@@ -1,0 +1,28 @@
+.shop-item__btns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+  border: 0.2rem solid $brand-primary;
+  list-style: none;
+
+}
+
+
+
+.shop-btn {
+  border-right: 0.2rem solid $brand-primary;
+
+  &:last-of-type {
+    border-right: 0;
+  }
+}
+
+.shop-btn__dropdown {
+  border-right: 0.2rem solid $brand-primary;
+
+}
+
+.dropdown__options {
+  display: none;
+}
