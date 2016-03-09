@@ -1,6 +1,5 @@
 // @import 'yoga';
 // @import 'normalize';
-
 @import 'variables';
 @import 'font-awesome';
 @import 'base';
@@ -9,55 +8,82 @@
 @import 'shop-btn';
 @import 'dropdown';
 
-.shop-item {
-  margin: 0.5em;
-
-  border: 0.2rem solid $brand-primary;
+@media screen and (min-width: 640px) and (max-width: 980px) {
+  .row {}
+  .grid-item {
+    width: calc(100% / 1 - #{$gutter});
+    min-width: 30rem;
+  }
+  .shop-item {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .shop-item__info {
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .shop-btn {
+    border: 0;
+    border-top: 0.2rem solid $brand-primary;
+    &:first-of-type {
+      border: 0;
+    }
+  }
+  .shop-item__btns {
+    flex-direction: column;
+    border: 0;
+    width: 8rem;
+    border-left: $brand-primary 0.2rem solid;
   }
 
-.shop-item__shirt {
-  width: 100%;
-  padding: $gutter;
-}
+  .dropdown__options {
+    height: 100%;
+    flex-direction: row;
 
-.shop-item__info {
-  padding-left: $gutter;
-  padding-right: $gutter;
-}
 
-.shop-item__title {
-  display: flex;
-  justify-content: center;
-}
-
-.shop-item__desc {
-  display: flex;
-  justify-content: center;
-}
-.shop-item__btns {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding: 0;
-  border-top: 0.2rem solid $brand-primary;
-  list-style: none;
-  margin: 0;
-}
-
-.shop-btn {
-  border-right: 0.2rem solid $brand-primary;
-  font-size: 2rem;
-  padding: 0.5rem;
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $brand-primary;
-  &:last-of-type {
+    right: 100%;
+    bottom: 0;
+    width: initial;
+    border: 0.4rem;
+  }
+  .dropdown {
     border-right: 0;
   }
-  &:hover {
-    color: $brand-white;
-    background: $brand-primary;
-  }
+
+.dropdown__options-item-shirt-color--pink {
+border-bottom: .2rem solid $brand-primary;
+}
+
+.dropdown__options-item-shirt-color--blue {
+border-bottom: .2rem solid $brand-primary;
+}
+
+.dropdown__options-item-shirt-color--yellow {
+border-bottom: .2rem solid $brand-primary;
+}
+
+.dropdown__options-item-shirt-color--green {
+border-bottom: .2rem solid $brand-primary;
+}
+
+.dropdown__options-item-s {
+  border-bottom: .2rem solid $brand-primary;
+}
+
+.dropdown__options-item-m {
+  border-bottom: .2rem solid $brand-primary;
+}
+
+.dropdown__options-item-l {
+  border-bottom: .2rem solid $brand-primary;
+}
+
+.dropdown__options-item-xl {
+  border-bottom: .2rem solid $brand-primary;
+}
+
+
 }

@@ -26,3 +26,62 @@
   min-width: 15rem;
   margin: 0;
 }
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+
+  border: 0.2rem solid $brand-primary;
+  }
+
+.shirt-div {
+  width: 100%;
+  padding: $gutter;
+}
+
+.shop-item__shirt {
+  width: 100%;
+  padding: $gutter;
+}
+
+.shop-item__info {
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+.shop-item__title {
+  display: flex;
+  justify-content: center;
+}
+
+.shop-item__desc {
+  display: flex;
+  justify-content: center;
+}
+.shop-item__btns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+  border-top: 0.2rem solid $brand-primary;
+  list-style: none;
+  margin: 0;
+}
+
+.shop-btn {
+  border-right: 0.2rem solid $brand-primary;
+  font-size: 2rem;
+  padding: 0.5rem;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $brand-primary;
+  &:last-of-type {
+    border-right: 0;
+  }
+  &:hover {
+    color: $brand-white;
+    background: $brand-primary;
+  }
+}
