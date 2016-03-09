@@ -1,65 +1,46 @@
-.shop-item__btns {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding: 0;
-  border-top: 0.2rem solid $brand-primary;
-  list-style: none;
-  margin: 0;
-}
-.shop-btn {
-  border-right: 0.2rem solid $brand-primary;
-  font-size: 2rem;
-  padding: 0.5rem;
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &:last-of-type {
-    border-right: 0;
-  }
-}
-.shop-btn__dropdown {
-  display: flex;
-  border-right: 0.2rem solid $brand-primary;
-  font-size: 2rem;
-  padding: 0.5rem;
-  flex-grow: 1;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
 
 .dropdown {
   position: relative;
+  display: flex;
+  border-right: 0.2rem solid $brand-primary;
+  font-size: 2rem;
+  padding: 0.5rem;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
   &__options {
-    display: flex;
+    display: none;
     position: absolute;
     right: 0%;
     bottom: 100%;
-    widows: 100%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
-
     flex-direction: column;
-
   }
 
   &:hover {
-    &__options {
+    .dropdown__options {
       display: flex;
+      color: $brand-primary;
     }
   }
 }
 
-.dropdown__options-item-shirt-color--pink {
+.dropdown__options-item-shirt-color--pink  {
   padding: 0.5rem;
   display: flex;
   justify-content: center;
   border: 2px solid $brand-primary;
   background: $brand-white;
   color: $pink;
+  border-bottom: 0;
+
+  &:hover {
+    font-size: 140%;
+  }
 }
 .dropdown__options-item-shirt-color--blue {
   padding: 0.5rem;
@@ -68,6 +49,12 @@
   border: 2px solid $brand-primary;
   background: $brand-white;
   color: $blue;
+  border-bottom: 0;
+
+  &:hover {
+    font-size: 140%;
+  }
+
 }
 .dropdown__options-item-shirt-color--yellow {
   padding: 0.5rem;
@@ -76,6 +63,12 @@
   border: 2px solid $brand-primary;
   background: $brand-white;
   color: $yellow;
+  border-bottom: 0;
+
+  &:hover {
+    font-size: 140%;
+  }
+
 }
 .dropdown__options-item-shirt-color--green {
   padding: 0.5rem;
@@ -84,4 +77,31 @@
   border: 2px solid $brand-primary;
   background: $brand-white;
   color: $green;
+
+  &:hover {
+    font-size: 140%;
+  }
+
+}
+.dropdown__options-item {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  border: 2px solid $brand-primary;
+  background: $brand-white;
+
+  &:hover {
+    font-size: 140%;
+  }
+
+
+&-s {
+  border-bottom: 0;
+}
+&-m {
+  border-bottom: 0
+}
+&-l {
+  border-bottom: 0
+}
 }

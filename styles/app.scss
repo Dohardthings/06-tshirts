@@ -34,3 +34,30 @@
   display: flex;
   justify-content: center;
 }
+.shop-item__btns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+  border-top: 0.2rem solid $brand-primary;
+  list-style: none;
+  margin: 0;
+}
+
+.shop-btn {
+  border-right: 0.2rem solid $brand-primary;
+  font-size: 2rem;
+  padding: 0.5rem;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $brand-primary;
+  &:last-of-type {
+    border-right: 0;
+  }
+  &:hover {
+    color: $brand-white;
+    background: $brand-primary;
+  }
+}
