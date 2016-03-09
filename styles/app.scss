@@ -11,13 +11,18 @@
 
 .shop-item {
   margin: 0.5em;
-  padding: $gutter;
+
   border: 0.2rem solid $brand-primary;
   }
 
 .shop-item__shirt {
   width: 100%;
+  padding: $gutter;
+}
 
+.shop-item__info {
+  padding-left: $gutter;
+  padding-right: $gutter;
 }
 
 .shop-item__title {
