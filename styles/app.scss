@@ -7,8 +7,7 @@
 @import 'shop-item';
 @import 'shop-btn';
 @import 'dropdown';
-
-@media screen and (min-width: 640px) and (max-width: 980px) {
+@media screen and (min-width: 500px) and (max-width: 980px) {
   .grid-item {
     width: calc(100% / 1 - #{$gutter});
     min-width: 30rem;
@@ -37,14 +36,10 @@
     width: 8rem;
     border-left: $brand-primary 0.2rem solid;
   }
-
   .dropdown__options {
     height: calc(100% + .2rem);
     flex-direction: row;
-    font-size: 3rem;
-
-
-
+    font-size: 1rem;
     right: 100%;
     bottom: 0;
     width: initial;
@@ -53,53 +48,39 @@
   .dropdown {
     border-right: 0;
   }
-
-.dropdown__options-item-shirt-color--pink {
-border-bottom: .2rem solid $brand-primary;
-align-self: center;
-
-
-}
-
-.dropdown__options-item-shirt-color--blue {
-border-bottom: .2rem solid $brand-primary;
-align-self: center;
-border-left: 0;
-border-right: 0;
-}
-
-.dropdown__options-item-shirt-color--yellow {
-border-bottom: .2rem solid $brand-primary;
-align-self: center;
-border-right: 0;
-}
-
-.dropdown__options-item-shirt-color--green {
-border-bottom: .2rem solid $brand-primary;
-align-self: center;
-}
-
-.dropdown__options-item-s {
-  border-bottom: .2rem solid $brand-primary;
-  align-self: center;
-
-
-}
-
-.dropdown__options-item-m {
-  border-bottom: .2rem solid $brand-primary;
-  align-self: center;
-}
-
-.dropdown__options-item-l {
-  border-bottom: .2rem solid $brand-primary;
-  align-self: center;
-}
-
-.dropdown__options-item-xl {
-  border-bottom: .2rem solid $brand-primary;
-  align-self: center;
-}
-
-
+  .dropdown__options-item-shirt-color--pink {
+    border-bottom: 0.2rem solid $brand-primary;
+    align-self: center;
+  }
+  .dropdown__options-item-shirt-color--blue {
+    border-bottom: 0.2rem solid $brand-primary;
+    align-self: center;
+    border-left: 0;
+    border-right: 0;
+  }
+  .dropdown__options-item-shirt-color--yellow {
+    border-bottom: 0.2rem solid $brand-primary;
+    align-self: center;
+    border-right: 0;
+  }
+  .dropdown__options-item-shirt-color--green {
+    border-bottom: 0.2rem solid $brand-primary;
+    align-self: center;
+  }
+  .dropdown__options-item-s {
+    border-bottom: 0.2rem solid $brand-primary;
+    align-self: center;
+  }
+  .dropdown__options-item-m {
+    border-bottom: 0.2rem solid $brand-primary;
+    align-self: center;
+  }
+  .dropdown__options-item-l {
+    border-bottom: 0.2rem solid $brand-primary;
+    align-self: center;
+  }
+  .dropdown__options-item-xl {
+    border-bottom: 0.2rem solid $brand-primary;
+    align-self: center;
+  }
 }
