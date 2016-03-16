@@ -35,8 +35,9 @@
   }
 
 .shirt-div {
-  width: 100%;
+  width: 90%;
   padding: $gutter;
+  margin: auto;
 }
 
 .shop-item__shirt {
@@ -61,7 +62,6 @@
 .shop-item__btns {
   display: flex;
   flex-direction: row;
-  width: 100%;
   padding: 0;
   border-top: 0.2rem solid $brand-primary;
   list-style: none;

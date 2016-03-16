@@ -16,6 +16,11 @@
     flex-direction: row;
     justify-content: flex-start;
   }
+
+  .shop-item__shirt {
+    width: 70%;
+  }
+
   .shop-item__info {
     padding-top: $gutter;
     padding-bottom: $gutter;
@@ -33,7 +38,6 @@
   .shop-item__btns {
     flex-direction: column;
     border: 0;
-    width: 8rem;
     border-left: $brand-primary 0.2rem solid;
   }
   .dropdown__options {
