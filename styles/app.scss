@@ -7,6 +7,8 @@
 @import 'shop-item';
 @import 'shop-btn';
 @import 'dropdown';
+
+
 @media screen and (min-width: 500px) and (max-width: 980px) {
   .grid-item {
     width: calc(100% / 1 - #{$gutter});
