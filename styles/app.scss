@@ -19,6 +19,12 @@
     justify-content: flex-start;
   }
 
+  .shirt-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .shop-item__shirt {
     width: 70%;
   }
